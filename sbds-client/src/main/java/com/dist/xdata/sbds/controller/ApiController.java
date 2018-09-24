@@ -25,7 +25,7 @@ public class ApiController {
     StatisticsService statDubboService;
 
     @ApiOperation(value = "获取用地平衡表数据。", notes = "getLandBalance")
-	@RequestMapping(value = "/stats/landbalance", method = { RequestMethod.GET })
+	@RequestMapping(value = "/stats/landbalance")
     public Result getLandBalance() {
         
     	return new Result(Result.SUCCESSS, "用地平衡数据", this.statDubboService.getLandBalance());

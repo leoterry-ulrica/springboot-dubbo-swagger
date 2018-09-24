@@ -29,6 +29,8 @@ public class StatisticsServiceImpl implements StatisticsService {
 			while ((b = bufferedReader.readLine()) != null) {
 				stringBuffer.append(b);
 			}
+			System.out.println("当前线程id："+Thread.currentThread().getId()+ "，数据：");
+			System.out.println(stringBuffer);
 			return JSONArray.parseArray(stringBuffer.toString(), LandBalanceDTO.class);
 		} catch (IOException e) {
 			e.printStackTrace();
