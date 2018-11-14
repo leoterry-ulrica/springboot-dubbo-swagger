@@ -4,4 +4,4 @@
 
 3、demo地址：https://github.com/leoterry-ulrica/springboot-dubbo-swagger.git
 
-4、api地址：http://127.0.0.1:1234/swagger-ui.htm
+4、api地址：http://127.0.0.1:1234/swagger-ui.html
